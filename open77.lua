@@ -24,6 +24,7 @@ permissions {
     "players.damage.apply", -- older spelling of players.stats.apply, still checked by some builds
     "input.actions",        -- client: RegisterKeyMapping / Open77.input.keyFor (the station key)
     "ui.vanilla.map",       -- client: Open77.blips (stations, kiosks, the route to a call)
+    "http.request", -- server: Open77.http.get (update check, Config.versionCheck)
 }
 
 shared_script "config.lua"
@@ -35,6 +36,7 @@ server_scripts {
     "server/dispatch.lua",
     "server/care.lua",
     "server/main.lua",
+    "server/version.lua",
 }
 
 client_script "client/main.lua"
